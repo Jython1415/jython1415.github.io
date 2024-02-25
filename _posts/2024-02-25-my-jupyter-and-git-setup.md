@@ -1,5 +1,6 @@
 ---
 title: "Collaborating with Jupyter Notebook using Git"
+last_modified_at: 2024-02-25T12:05:00-05:00
 categories:
   - Blog
 tags:
@@ -45,9 +46,8 @@ git  config  filter.filter-notebook.smudge  "./scripts/filter-notebook/smudge.sh
 # 2. Sets all cells.execution_count to null
 # 3. Removes the "collapsed" key from all cells.metadata
 # 4. Removes the "autoscroll" key from all cells.metadata
-# 5. Removes all but the "name" and "pygments_lexer" keys from metadata.language_info if those keys exist
-#   - Keeping "pygments_lexer" because of [a recommendation from Tim Staley](https://arc.net/l/quote/aslrcntw)
-# 6. Removes all but the "langauge_info" and "kernelspec" keys from metadata
+# 5. Removes all but the "name" and "version" keys from metadata.language_info if those keys exist
+# 6. Removes all but the "language_info" and "kernelspec" keys from metadata
 # 7. Writes parts of the metadata to stderr
 
 jq --indent 1 \
@@ -73,7 +73,7 @@ cat
 ```bash
 #!/bin/bash
 
-# Initialize the virtual environement
+# Initialize the virtual environment
 bash  scripts/reinstall-venv.sh
 # Install the kernel for the environment
 .venv/bin/python  -m  ipykernel  install  --user  --name  <kernel name>  --display-name  "<kernel display name>"
@@ -112,3 +112,4 @@ pip install --upgrade pip
 pip install -r requirements-dev.txt
 pip freeze > requirements.txt
 bash scripts/update.sh
+```
