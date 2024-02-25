@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Joshua Shew"
   avatar : "/assets/images/bio-photo.png"
-  bio    : "<placeholder bio; one to two sentences>"
+  bio    : "CS student at CWRU. I love coding and thinking."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
