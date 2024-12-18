@@ -139,10 +139,10 @@ With The Chosure hub plugged in, I see "Up to 480 Mb/s" for System Information >
 
 So, there's a 10x difference in speed, for one, and the Chosure USB is listed as a USB 2.1 hub instead of a 3.1 hub. I'm not sure what the significance of that is.
 
-The Chosure hub seems 10x slower than their advertised 5 Gb/s, and the ANKER hub seems to be inline with their promotional material.
+The Chosure hub seems 10x slower than their advertised 5 Gb/s, and the ANKER hub seems to be inline with their promotional material. But, as I did recognize earlier, the version of the Chosure hub I got is older than what they currently have on Amazon, so there is a chance that the newer version is just faster, and mine is performing as well as it was intended to.
 
 # Conclusion
 
 - Having a tool to benchmark issues like this will be handy in the future.
 - I should probably get another hub... after checking their advertised data transfer rate more carefully.
-- Something is definitely going with the read test on the 2nd port of ANKER. I should follow-up on that...
+- Something is definitely going with the read test on the 2nd port of ANKER. I should follow-up on that... If I get around to it, I'll make another post out of it.
