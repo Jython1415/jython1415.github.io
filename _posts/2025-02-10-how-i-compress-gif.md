@@ -10,7 +10,7 @@ tags:
   - Video
 ---
 
-The other day I needed to upload a screen recording to report a bug.[^1] Here's how I produced a compressed GIF.
+The other day I needed to upload a screen recording to report a bug[^1]. Here's how I produced a compressed GIF.
 
 1. Record the screen with the macOS built-in screen capture: ⌘⇧5
 2. Rename/copy the screen recording to `input.mov`
