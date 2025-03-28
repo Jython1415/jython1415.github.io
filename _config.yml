@@ -67,9 +67,6 @@ author:
     - label: "Bluesky"
       icon: "fab fa-fw fa-bluesky"
       url: "https://bsky.app/profile/joshuashew.bsky.social"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://jython1415.github.io/"
 
 footer:
   links:
