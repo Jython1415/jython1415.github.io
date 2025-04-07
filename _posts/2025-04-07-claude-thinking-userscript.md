@@ -11,8 +11,6 @@ tags:
   - Userscript
 ---
 
-# How I Auto-Enable Extended Thinking Mode for Claude
-
 I got tired of manually enabling extended thinking mode for Claude. I want it on for most of my conversations, but since the default is that it's off, I find myself having to click that toggle constantly. It's even worse when I start a conversation and realize that I wanted it on from the start, and now I have to go back and create a new chat with the same prompt.
 
 I would much prefer if it was on by default and I would have to manually turn it off when I wanted it off.
