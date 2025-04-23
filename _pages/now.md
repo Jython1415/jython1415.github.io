@@ -1,67 +1,52 @@
 ---
 permalink: /now/
 title: "Now"
-last_modified_at: 2025-03-22
+last_modified_at: 2025-04-23
 ---
 
-I wrote this update from my apartment in Cleveland, after a grocery run at Costco.
+I wrote part of this update during a quiet moment at my tutoring job.
 
 ## Priorities
 
 1. Landing a job
 1. Graduate!
-1. Finishing the Upper Room Japan iOS application
-1. Having fun
+1. Figuring out the move to Boston
 
 ## Projects
 
-### Learning about online privacy and security
+### Learning about MCP and other scaffolding around LLMs
 
-Taking Computer Security and Data Privacy inspired me to get my online access setup more seriously, but it took me a while to get around to it—better late than never!
+I've started taking my usage of Claude more seriously to try to get as much value as I can out of it. The macOS application for Claude allows you to give Claude access to MCP servers running on your own machine, so I'm learning how to set up and program simple MCP servers on my own. I tried setting up my own MCP server for Bluesky access, but someone had a great one alreaady, so we chatted and the developer ended up implementing the features I was looking for. I'll have to find another MCP project to set up myself.
 
-I now use ProtonVPN regularly, and I occasionally use Tor when I want to access a website "anonymously". However, I've learned that using Tor over VPN isn't ideal, so I'm still working on getting my VPN configuration so that Tor traffic isn't routed over it.
+Maybe I'll end up setting up the Bluesky MCP server anyway so that I can limit the feature-set to what I actually use.
 
-### Becoming more comfortable on the command line
+### Knowledge Management System
 
-I have gradually been making the shift from a pure VSCode user to someone that can be productive without it. I'm learning how to use Vim and set up my own development environment. You can see my progress on my [dotfiles repository](https://github.com/Jython1415/dotfiles).
+I enjoy writing down my thoughts, but I've become more frustrated at how distributed my system is.
 
-### Stretching my programming skills
+- Bluesky for small thoughts I can post publicly
+- Apple Notes for small thoughts I can't post publicly
+- Obsidian for longer thoughts, notes, explanations, etc.
+- macOS file system for reference material: PDFs, images, etc.
+- Personal blog (hosted by GitHub) for longer material that I can publish
 
-I am trying to stretch my programming skills by doing a lot of small projects, but I'm finding that it is rather difficult to get them to a point where they are ready to share, or I just never get around to them. I'm going to have to work on that...
+It would be great if all my notes and thoughts could be stored and searched in a single location. None of the existing technologies work for me, and I'm more than happy to try to create my own, so I may make it a project to try to set up a PKMS that meets my needs. I will probably end up posting updates on Bluesky and this website as I made progress on that.
 
 ## Media
 
-### Slow Productivity by Cal Newport
+### Bluesky
 
-I finished *So Good They Can't Ignore You* by Cal Newport a little while ago, so I'm going to try *Slow Productivity* as well and see what I can learn from it. While some parts of *So Good They Can't Ignore You* didn't really click for me ([Bluesky post about this](https://bsky.app/profile/joshuashew.bsky.social/post/3lkvta7uqds23)), Cal Newport just does a lot of thinking about this so I could recognize that there were valuable insights in there if I had the patience to work through the parts that bothered me.
-
-We'll see how it goes.
-
-### LessWrong Forum
-
-I still check in on LW occasionally, but it is become much less frequent than it used to be. I mostly just read the curated posts and think more deeply about those than read a bunch of content and think less deeply about each of them.
-
-### YouTube
-
-I'm trying to cut it out (< 30 min a day). Some weeks it's < 15 min a day but other weeks it's more like 2 hours a day.
+For better or for worse, most of my input (news, tech stuff, etc.) is coming from Bluesky. I follow a bunch of tech people that I find interesting, and I also keep up with some of the reputable news-related feeds. I'm interested in setting up an RSS reader at some point because there are a number of blogs I'd like to follow, but I don't have a good mechanism for doing that.
 
 ## Recent Highlights
 
-### (Doing a cold plunge during) a trip to California with my roommates
+### Injured Heel
 
-We swam, played pickeball, biked around SF, and skied—all super fun. On the last day, I did a cold plunge in Lake Tahoe (for $50 from Anthony). It was pretty cold!
+Not a highlight, but my heel has been bothering me since the racquetball tournament back in March. I've tried to avoid running and other activities, but it's hard to keep it up forever. I played a bit of badminton on it last weekend to test it out, and... still injured. I guess I'm going to have to keep resting it for now.
 
-Now I need to figure out how to make rent next month (O_O;)
+### Apartment
 
-### Racquetball Tournament with the CWRU Racquetball Club
-
-Octavio from the club invited me and my friends to participate in the racquetball tournament (at Baldwin Wallace) with the rest of the club. I was a bit nervous but it ended up being a lot of fun. It was cool to see how much better the players from the other schools were who had proper coaching and years of experience. It definitely showed that everyone from CWRU just played for fun without coaching or anything like that. I managed to scrape by with a win in the intermediate division for singles, but Miles and I got destroyed in doubles.
-
-### Joining Bluesky
-
-I switched from X to Bluesky because I got a bit tired of the algorithm there, and the fact that it was headed by Elon Musk didn't help at all. Joining Bluesky has been great. I follow a bunch of developers that are working on Bluesky and the underlying protocol, and seeing their work inspires me to do cool programming things and post about it too.
-
-It's also been a good vessel for documenting my thinking on what I read.
+My partner and I figured out where we're going to be living after graduation, which is good to have sorted out. Now I just need to figure out how I'm going to be making money after the move.
 
 ---
 
