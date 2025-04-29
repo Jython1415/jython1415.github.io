@@ -45,9 +45,7 @@ There are two variations on this puzzle based on the code format.
 
 (1) is simpler and avoids the problem of decoding format, but (2) may allow for better information density. With (1), you should know that each additional character transmitted corresponds to ~6 bits of information. This should allow you to compare the efficacy of solutions for variations (1) and (2).
 
-## Challenge Levels
-
-### Standard Challenge
+## The Challenge
 
 Design a strategy for each of the following scenarios.
 
@@ -61,13 +59,11 @@ Design a strategy for each of the following scenarios.
 
 If that was too easy, consider aiming for 10x as many loops for each of the code length restriction.
 
-### Theoretical Challenge
-
-At what code length do you become limited by the number of unique words in English, rather than by your information transfer capacity and strategy re-discovery reliability? Assume that the list of words that the Time God uses has more than 100,000 words but less than 1,000,000 words.
+Additionally, consider how long the code would have to be for you to be limited by the number of unique words in English, rather than by your information transfer capacity and strategy re-discovery reliability? Assume that the list of words that the Time God uses has more than 100,000 words but less than 1,000,000 words.
 
 ## Hints
 
-### Questions to prompt thinking
+### Questions
 
 1. How would you ensure your future self recognizes the encoding strategy?
 2. What word-generation algorithm would be consistently discoverable?
