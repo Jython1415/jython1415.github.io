@@ -4,22 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI character and the epistemic stakes — Will MacAskill · 80,000 Hours</title>
-<meta name="description" content="Full transcript with speaker attribution: Will MacAskill and Rob Wiblin discuss AI character, sycophancy, and the ethics spectrum. 80,000 Hours podcast 2025.">
+<meta name="description" content="Three-section synchronized transcript: Will MacAskill and Rob Wiblin on AI character, sycophancy, and the ethics spectrum. 80,000 Hours podcast 2025.">
+<link rel="canonical" href="https://tools.joshuashew.com/transcript/">
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tools.joshuashew.com/transcript/">
 <meta property="og:title" content="AI character and the epistemic stakes — Will MacAskill · 80,000 Hours">
-<meta property="og:description" content="Three-section synchronized transcript covering stakes, sycophancy diagnosis, and the tool-vs-autonomous-agent design space.">
+<meta property="og:description" content="Three-section synchronized transcript with speaker attribution. Stakes, sycophancy diagnosis, and the tool-vs-autonomous-agent design space.">
+<meta property="og:image" content="https://tools.joshuashew.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Quote card: AI character and the epistemic stakes — Will MacAskill · 80,000 Hours">
+<meta property="og:site_name" content="tools.joshuashew.com">
+<!-- Twitter / Bluesky card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI character and the epistemic stakes — Will MacAskill · 80,000 Hours">
+<meta name="twitter:description" content="Three-section synchronized transcript with speaker attribution. Stakes, sycophancy diagnosis, and the tool-vs-autonomous-agent design space.">
+<meta name="twitter:image" content="https://tools.joshuashew.com/social-card.png">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#0e0c0a;
-  --bg2:#141210;
-  --bg3:#1a1612;
-  --fg:#e2d9cd;
-  --fg2:#9a8a7a;
-  --fg3:#6a5a4e;
-  --fgi:#5b9bd6;
-  --bd:rgba(255,255,255,0.08);
-  --bd2:rgba(255,255,255,0.14);
-  --bd3:rgba(255,255,255,0.22);
+  --bg:#0e0c0a;--bg2:#141210;--bg3:#1a1612;
+  --fg:#e2d9cd;--fg2:#9a8a7a;--fg3:#6a5a4e;
+  --fgi:#5b9bd6;--bd:rgba(255,255,255,0.08);
+  --bd2:rgba(255,255,255,0.14);--bd3:rgba(255,255,255,0.22);
   --r1:8px;--r2:12px;
   --sans:system-ui,-apple-system,sans-serif;
   --serif:Georgia,'Times New Roman',serif;
@@ -80,41 +88,14 @@ body{background:var(--bg);color:var(--fg);font-family:var(--sans);min-height:100
 <div class="wrap">
 <div id="toc" class="pnl">
   <div style="padding:8px 12px 4px;font-size:10px;font-family:var(--mono);color:var(--fg3);letter-spacing:.06em">chapters</div>
-  <a class="ti on" data-sec="1" onclick="jmp(1)">
-    <span class="tn">01</span><span class="tr">stakes</span>
-    <span class="tt">AI character as the world's workforce</span>
-  </a>
-  <a class="ti" data-sec="2" onclick="jmp(2)">
-    <span class="tn">02</span><span class="tr">diagnosis</span>
-    <span class="tt">The sycophancy panic was justified</span>
-  </a>
-  <a class="ti" data-sec="3" onclick="jmp(3)">
-    <span class="tn">03</span><span class="tr">design space</span>
-    <span class="tt">How opinionated should AI be?</span>
-  </a>
+  <a class="ti on" data-sec="1" onclick="jmp(1)"><span class="tn">01</span><span class="tr">stakes</span><span class="tt">AI character as the world's workforce</span></a>
+  <a class="ti" data-sec="2" onclick="jmp(2)"><span class="tn">02</span><span class="tr">diagnosis</span><span class="tt">The sycophancy panic was justified</span></a>
+  <a class="ti" data-sec="3" onclick="jmp(3)"><span class="tn">03</span><span class="tr">design space</span><span class="tt">How opinionated should AI be?</span></a>
 </div>
 <div id="mid" class="pnl">
-  <div class="mc on" data-sec="1">
-    <div class="mr">stakes · 0:58–8:10</div>
-    <div class="mh">AI character = designing the world's workforce</div>
-    <div class="ms">AI already shapes what millions think about politics, ethics, and decisions. As AI becomes the whole economy, a handful of companies set the personality for everyone's chief of staff, political adviser, and confidant. Three mechanisms: shaping high-stakes decisions, precedent for superintelligence ("writing instructions to God"), cultural rub-off at scale.</div>
-    <blockquote class="mq">"how does the AI impact our ability to reason? How does it impact our ability to morally reflect?"</blockquote>
-    <div class="mt"><a href="https://youtu.be/g0MikM4Bsbc?t=68" target="_blank">↗ 1:08</a> · <a href="https://youtu.be/g0MikM4Bsbc?t=458" target="_blank">↗ 7:38 key passage</a></div>
-  </div>
-  <div class="mc" data-sec="2">
-    <div class="mr">diagnosis · 8:11–13:24</div>
-    <div class="mh">The sycophancy panic was justified</div>
-    <div class="ms">Most informed people dismissed the 4o sycophancy concern — MacAskill thinks they were wrong. Systematically agreeable AI could distort collective decision-making at civilizational scale, with no self-correcting mechanism. Separate from the loneliness gap 4o filled. Subtler ongoing harms — reinforcing political priors, validating poor reasoning — are the real concern. Gemini worst offender.</div>
-    <blockquote class="mq">"this could distort people's decision-making on a massive scale — and there was a plausible story whereby this wouldn't be corrected"</blockquote>
-    <div class="mt"><a href="https://youtu.be/g0MikM4Bsbc?t=491" target="_blank">↗ 8:11</a> · <a href="https://youtu.be/g0MikM4Bsbc?t=658" target="_blank">↗ 10:58 teen case</a></div>
-  </div>
-  <div class="mc" data-sec="3">
-    <div class="mr">design space · 13:25–19:09</div>
-    <div class="mh">Where between hammer and autonomous agent?</div>
-    <div class="ms">Spectrum: pure tool (hammer, no values) → fully autonomous AI with its own goals. The interesting question is where between these to aim. MacAskill: pro-social drives + broad vision of good outcomes, but not doctrinal. Test case for ethical advice: "look into your heart" vs. "here are the considerations" — both fine; "actually Kantianism is true" is not. Rob raises the corrigibility argument.</div>
-    <blockquote class="mq">"the wholly obedient AI tries to figure out what you most want; or it tries to help you reflect on your values"</blockquote>
-    <div class="mt"><a href="https://youtu.be/g0MikM4Bsbc?t=864" target="_blank">↗ 14:24 spectrum</a> · <a href="https://youtu.be/g0MikM4Bsbc?t=1108" target="_blank">↗ 18:28 corrigibility</a></div>
-  </div>
+  <div class="mc on" data-sec="1"><div class="mr">stakes · 0:58–8:10</div><div class="mh">AI character = designing the world's workforce</div><div class="ms">AI already shapes what millions think about politics, ethics, and decisions. As AI becomes the whole economy, a handful of companies set the personality for everyone's chief of staff, political adviser, and confidant. Three mechanisms: shaping high-stakes decisions, precedent for superintelligence ("writing instructions to God"), cultural rub-off at scale.</div><blockquote class="mq">"how does the AI impact our ability to reason? How does it impact our ability to morally reflect?"</blockquote><div class="mt"><a href="https://youtu.be/g0MikM4Bsbc?t=68" target="_blank">↗ 1:08</a> · <a href="https://youtu.be/g0MikM4Bsbc?t=458" target="_blank">↗ 7:38 key passage</a></div></div>
+  <div class="mc" data-sec="2"><div class="mr">diagnosis · 8:11–13:24</div><div class="mh">The sycophancy panic was justified</div><div class="ms">Most informed people dismissed the 4o sycophancy concern — MacAskill thinks they were wrong. Systematically agreeable AI could distort collective decision-making at civilizational scale, with no self-correcting mechanism. Separate from the loneliness gap 4o filled. Subtler ongoing harms — reinforcing political priors, validating poor reasoning — are the real concern. Gemini worst offender.</div><blockquote class="mq">"this could distort people's decision-making on a massive scale — and there was a plausible story whereby this wouldn't be corrected"</blockquote><div class="mt"><a href="https://youtu.be/g0MikM4Bsbc?t=491" target="_blank">↗ 8:11</a> · <a href="https://youtu.be/g0MikM4Bsbc?t=658" target="_blank">↗ 10:58 teen case</a></div></div>
+  <div class="mc" data-sec="3"><div class="mr">design space · 13:25–19:09</div><div class="mh">Where between hammer and autonomous agent?</div><div class="ms">Spectrum: pure tool (hammer, no values) → fully autonomous AI with its own goals. The interesting question is where between these to aim. MacAskill: pro-social drives + broad vision of good outcomes, but not doctrinal. Test case: "look into your heart" vs. "here are the considerations" — both fine; "Kantianism is true" is not. Rob raises the corrigibility argument.</div><blockquote class="mq">"the wholly obedient AI tries to figure out what you most want; or it tries to help you reflect on your values"</blockquote><div class="mt"><a href="https://youtu.be/g0MikM4Bsbc?t=864" target="_blank">↗ 14:24 spectrum</a> · <a href="https://youtu.be/g0MikM4Bsbc?t=1108" target="_blank">↗ 18:28 corrigibility</a></div></div>
 </div>
 <div id="tx" class="pnl"><div id="txc"></div></div>
 </div>
@@ -187,11 +168,7 @@ const SEC_L={1:'01 · stakes',2:'02 · diagnosis',3:'03 · design space'};
 function buildTx(){
   let h='',cs=0;
   for(const t of TURNS){
-    if(t.sec!==cs){
-      if(cs)h+='</div>';
-      cs=t.sec;
-      h+=`<div class="xs" data-sec="${cs}"><div class="xh">${SEC_L[cs]}</div>`;
-    }
+    if(t.sec!==cs){if(cs)h+='</div>';cs=t.sec;h+=`<div class="xs" data-sec="${cs}"><div class="xh">${SEC_L[cs]}</div>`;}
     const sc=t.cont?'c':(t.spk==='Will'?'w':'r');
     const lb=t.cont?'↳':t.spk;
     h+=`<div class="xt"><a class="xl" href="https://youtu.be/g0MikM4Bsbc?t=${t.start}" target="_blank">${t.ts}</a><span class="xn ${sc}">${lb}</span><p class="xb">${t.txt}</p></div>`;
@@ -204,16 +181,13 @@ let act=1;const sup={};
 function busy(id){return sup[id]&&Date.now()<sup[id];}
 function lock(id){sup[id]=Date.now()+500;}
 function setAct(s,from){
-  if(s===act&&from!=='jmp')return;
-  act=s;
+  if(s===act&&from!=='jmp')return;act=s;
   document.querySelectorAll('[data-sec]').forEach(el=>el.classList.toggle('on',+el.dataset.sec===s));
   if(from!=='mid')rscroll(document.getElementById('mid'),s);
   if(from!=='tx')rscroll(document.getElementById('tx'),s);
 }
 function rscroll(p,s){
-  const t=p.querySelector('[data-sec="'+s+'"]');
-  if(!t)return;
-  lock(p.id);
+  const t=p.querySelector('[data-sec="'+s+'"]');if(!t)return;lock(p.id);
   const pr=p.getBoundingClientRect(),tr=t.getBoundingClientRect();
   p.scrollBy({top:tr.top-pr.top-4,behavior:'smooth'});
 }
