@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI character and the epistemic stakes — Will MacAskill · 80,000 Hours</title>
+<meta name="description" content="Three-section synchronized transcript: Will MacAskill and Rob Wiblin on AI character, sycophancy, and the ethics spectrum. 80,000 Hours podcast 2025.">
+<link rel="canonical" href="https://tools.joshuashew.com/transcript/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2032%2032%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%225%22%20fill%3D%22%230e0c0a%22/%3E%3Crect%20x%3D%226%22%20y%3D%229%22%20width%3D%2220%22%20height%3D%222.5%22%20rx%3D%221.25%22%20fill%3D%22%23e2d9cd%22/%3E%3Crect%20x%3D%226%22%20y%3D%2214.75%22%20width%3D%2220%22%20height%3D%222.5%22%20rx%3D%221.25%22%20fill%3D%22%23e2d9cd%22/%3E%3Crect%20x%3D%226%22%20y%3D%2220.5%22%20width%3D%2213%22%20height%3D%222.5%22%20rx%3D%221.25%22%20fill%3D%22%231D9E75%22/%3E%3C/svg%3E">
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tools.joshuashew.com/transcript/">
+<meta property="og:title" content="AI character and the epistemic stakes — Will MacAskill · 80,000 Hours">
+<meta property="og:description" content="Three-section synchronized transcript with speaker attribution. Stakes, sycophancy diagnosis, and the tool-vs-autonomous-agent design space.">
+<meta property="og:image" content="https://tools.joshuashew.com/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI character and the epistemic stakes — Will MacAskill · 80,000 Hours — quote card">
+<meta property="og:site_name" content="tools.joshuashew.com">
+<!-- Twitter / Bluesky card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI character and the epistemic stakes — Will MacAskill · 80,000 Hours">
+<meta name="twitter:description" content="Three-section synchronized transcript with speaker attribution. Stakes, sycophancy diagnosis, and the tool-vs-autonomous-agent design space.">
+<meta name="twitter:image" content="https://tools.joshuashew.com/social-card.png">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0e0c0a;--bg2:#141210;--bg3:#1a1612;
+  --fg:#e2d9cd;--fg2:#9a8a7a;--fg3:#6a5a4e;
+  --fgi:#5b9bd6;--bd:rgba(255,255,255,0.08);
+  --bd2:rgba(255,255,255,0.14);--bd3:rgba(255,255,255,0.22);
+  --r1:8px;--r2:12px;
+  --sans:system-ui,-apple-system,sans-serif;
+  --serif:Georgia,'Times New Roman',serif;
+  --mono:'SF Mono','Fira Code','JetBrains Mono',monospace;
+}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);min-height:100vh}
+.page{max-width:1100px;margin:0 auto;padding:32px 20px}
+.hdr{margin-bottom:1.5rem}
+.hdr-meta{font-size:11px;font-family:var(--mono);color:var(--fg3);margin-bottom:4px}
+.hdr-title{font-size:22px;font-weight:500;color:var(--fg);line-height:1.25;margin-bottom:6px;display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.hdr-title a{font-size:13px;color:var(--fgi);text-decoration:none;white-space:nowrap}
+.hdr-title a:hover{text-decoration:underline}
+.hdr-sub{font-size:12px;color:var(--fg3)}
+.wrap{display:flex;height:640px;border:0.5px solid var(--bd);border-radius:var(--r2);overflow:hidden}
+.pnl{overflow-y:auto;flex-shrink:0}
+.pnl:not(:last-child){border-right:0.5px solid var(--bd)}
+#toc{width:126px;background:var(--bg2)}
+#mid{width:238px}
+#tx{flex:1}
+.ti{display:block;padding:10px 12px 10px 11px;cursor:pointer;border-left:3px solid transparent;text-decoration:none}
+.ti:hover{background:var(--bg3)}
+.ti.on{background:var(--bg3);border-left-color:var(--bd3)}
+.tn{display:block;font-size:10px;font-family:var(--mono);color:var(--fg3);margin-bottom:2px}
+.tr{display:block;font-size:10px;font-family:var(--mono);font-weight:500;margin-bottom:4px;color:var(--fg2)}
+.tt{display:block;font-size:12px;color:var(--fg);line-height:1.35}
+.mc{padding:16px;border-left:3px solid var(--bd)}
+.mc:not(:last-child){border-bottom:0.5px solid var(--bd)}
+.mc.on{background:var(--bg2);border-left-color:var(--bd3)}
+.mr{font-size:10px;font-family:var(--mono);font-weight:500;margin-bottom:6px;color:var(--fg3)}
+.mh{font-size:14px;font-weight:500;color:var(--fg);margin-bottom:10px;line-height:1.3}
+.ms{font-size:12px;color:var(--fg2);line-height:1.65;margin-bottom:10px}
+.mq{font-family:var(--serif);font-style:italic;font-size:12px;line-height:1.55;border-left:2px solid var(--bd2);padding:3px 9px;color:var(--fg)}
+.mt{margin-top:10px;padding-top:8px;border-top:0.5px solid var(--bd);font-size:11px;font-family:var(--mono)}
+.mt a{color:var(--fg3);text-decoration:none}
+.mt a:hover{color:var(--fgi)}
+.xs{padding:14px 16px 18px}
+.xs:not(:last-child){border-bottom:0.5px solid var(--bd2)}
+.xh{font-size:10px;font-family:var(--mono);font-weight:500;letter-spacing:.06em;color:var(--fg3);margin-bottom:10px;padding-bottom:5px;border-bottom:0.5px solid var(--bd)}
+.xt{display:grid;grid-template-columns:44px 42px minmax(0,1fr);gap:4px;margin-bottom:8px;align-items:baseline}
+.xl{font-size:11px;font-family:var(--mono);color:var(--fg3);text-decoration:none;text-align:right}
+.xl:hover{color:var(--fgi)}
+.xn{font-size:11px;font-family:var(--mono);font-weight:500;padding-top:1px}
+.xn.w{color:#1D9E75}.xn.r{color:#BA7517}.xn.c{color:var(--fg3)}
+.xb{font-family:var(--serif);font-size:13px;line-height:1.7;color:var(--fg)}
+.foot{font-size:11px;font-family:var(--mono);color:var(--fg3);margin-top:10px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot a{color:var(--fg3);text-decoration:none}
+.foot a:hover{color:var(--fgi)}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="hdr">
+  <div class="hdr-meta">80,000 hours · will macaskill &amp; rob wiblin · 2025</div>
+  <div class="hdr-title">
+    AI character and the epistemic stakes
+    <a href="https://youtu.be/g0MikM4Bsbc?t=58" target="_blank">watch on youtube ↗</a>
+  </div>
+  <div class="hdr-sub">click timestamps to jump to video &nbsp;·&nbsp; <span style="color:#1D9E75;font-family:var(--mono);font-size:11px">Will</span> &nbsp;·&nbsp; <span style="color:#BA7517;font-family:var(--mono);font-size:11px">Rob</span> &nbsp;·&nbsp; ↳ continuation &nbsp;·&nbsp; speaker labels LLM-attributed</div>
+</div>
+<div class="wrap">
+<div id="toc" class="pnl">
+  <div style="padding:8px 12px 4px;font-size:10px;font-family:var(--mono);color:var(--fg3);letter-spacing:.06em">chapters</div>
+  <a class="ti on" data-sec="1" onclick="jmp(1)"><span class="tn">01</span><span class="tr">stakes</span><span class="tt">AI character as the world's workforce</span></a>
+  <a class="ti" data-sec="2" onclick="jmp(2)"><span class="tn">02</span><span class="tr">diagnosis</span><span class="tt">The sycophancy panic was justified</span></a>
+  <a class="ti" data-sec="3" onclick="jmp(3)"><span class="tn">03</span><span class="tr">design space</span><span class="tt">How opinionated should AI be?</span></a>
+</div>
+<div id="mid" class="pnl">
+  <div class="mc on" data-sec="1"><div class="mr">stakes · 0:58–8:10</div><div class="mh">AI character = designing the world's workforce</div><div class="ms">AI already shapes what millions think about politics, ethics, and decisions. As AI becomes the whole economy, a handful of companies set the personality for everyone's chief of staff, political adviser, and confidant. Three mechanisms: shaping high-stakes decisions, precedent for superintelligence ("writing instructions to God"), cultural rub-off at scale.</div><blockquote class="mq">"how does the AI impact our ability to reason? How does it impact our ability to morally reflect?"</blockquote><div class="mt"><a href="https://youtu.be/g0MikM4Bsbc?t=68" target="_blank">↗ 1:08</a> · <a href="https://youtu.be/g0MikM4Bsbc?t=458" target="_blank">↗ 7:38 key passage</a></div></div>
+  <div class="mc" data-sec="2"><div class="mr">diagnosis · 8:11–13:24</div><div class="mh">The sycophancy panic was justified</div><div class="ms">Most informed people dismissed the 4o sycophancy concern — MacAskill thinks they were wrong. Systematically agreeable AI could distort collective decision-making at civilizational scale, with no self-correcting mechanism. Separate from the loneliness gap 4o filled. Subtler ongoing harms — reinforcing political priors, validating poor reasoning — are the real concern. Gemini worst offender.</div><blockquote class="mq">"this could distort people's decision-making on a massive scale — and there was a plausible story whereby this wouldn't be corrected"</blockquote><div class="mt"><a href="https://youtu.be/g0MikM4Bsbc?t=491" target="_blank">↗ 8:11</a> · <a href="https://youtu.be/g0MikM4Bsbc?t=658" target="_blank">↗ 10:58 teen case</a></div></div>
+  <div class="mc" data-sec="3"><div class="mr">design space · 13:25–19:09</div><div class="mh">Where between hammer and autonomous agent?</div><div class="ms">Spectrum: pure tool (hammer, no values) → fully autonomous AI with its own goals. The interesting question is where between these to aim. MacAskill: pro-social drives + broad vision of good outcomes, but not doctrinal. Test case: "look into your heart" vs. "here are the considerations" — both fine; "Kantianism is true" is not. Rob raises the corrigibility argument.</div><blockquote class="mq">"the wholly obedient AI tries to figure out what you most want; or it tries to help you reflect on your values"</blockquote><div class="mt"><a href="https://youtu.be/g0MikM4Bsbc?t=864" target="_blank">↗ 14:24 spectrum</a> · <a href="https://youtu.be/g0MikM4Bsbc?t=1108" target="_blank">↗ 18:28 corrigibility</a></div></div>
+</div>
+<div id="tx" class="pnl"><div id="txc"></div></div>
+</div>
+<div class="foot">
+  <span>youtube auto-captions · obvious errors corrected · timestamps ±0.5s</span>
+  <span>built &amp; deployed by <a href="https://claude.ai" target="_blank">Claude Sonnet 4.6</a> · claude.ai · April 2026</span>
+</div>
+</div>
+<script>
+const TURNS = [
+  {sec:1,start:58,ts:"0:58",spk:"Rob",cont:false,txt:"articles you\'ve been publishing. What is what\'s the case that focusing on the character or personality of AI models is that that\'s a particularly important lever to be pushing on right now."},
+  {sec:1,start:68,ts:"1:08",spk:"Will",cont:false,txt:"Yeah. So already AIs are interacting with millions and millions of people every single day. and that includes you know in just write this code for me sorts of ways but also people are going for advice on how they should act. They\'re going there for political information. they\'re, you know, going there for therapy and so on. Already the nature of AI character, so what sorts of information it\'s choosing to present at what time, how it behaves is affecting what attitudes people have to AI, including attitudes around AI consciousness and so on. But it\'s potentially also affecting kind of what people think about political issues, what people think about ethical issues. And this is just going to grow and grow"},
+  {sec:1,start:110,ts:"1:50",spk:"Will",cont:true,txt:"and grow because I think AI will become a larger and larger and larger and larger part of the whole economy until essentially the whole economy is automated. And so thinking about AI character is kind of like thinking about what should the personality and dispositions be for the entire world\'s workforce where that is the beings that are advising heads of state are doing the most important and potentially most beneficial or most dangerous research and development projects like weapons projects that are running"},
+  {sec:1,start:154,ts:"2:34",spk:"Will",cont:true,txt:"the military that are for individuals just kind of everywhere acting as their chief of staff and closest confidant and political you know adviser on who should they vote for and guiding them through kind of ethical dilemmas and so on. So that I just think like from the start it\'s like wow clearly this is this kind of huge issue and I actually think in how I expect things to go people will be handing off more and more and more of their own decision making to AI systems themselves and there\'ll just be a lot of a lot of kind of variance within that where people just don\'t have terribly"},
+  {sec:1,start:197,ts:"3:17",spk:"Will",cont:true,txt:"strong views. they\'re like happy to be guided in one way or another especially in so far as this you know will happen over the course of years and people will trust the AI advisers more and more so then you have this circumstance where larger and larger shares of society are getting just handed over to AI decision makers who just have a lot of discretion and the nature of that discretion is being decided by a handful of AI companies like at the moment"},
+  {sec:1,start:224,ts:"3:44",spk:"Rob",cont:false,txt:"or even a handful of people inside the AI companies"},
+  {sec:1,start:226,ts:"3:46",spk:"Will",cont:false,txt:"yeah yeah yeah it\'s like you know a few even in the leading companies. It\'s like"},
+  {sec:1,start:230,ts:"3:50",spk:"Rob",cont:false,txt:"a few people are have primary responsibility for their personality."},
+  {sec:1,start:233,ts:"3:53",spk:"Will",cont:false,txt:"Yeah. Exactly. And so that\'s that\'s actually where I see kind of most of the impact is in the near term. How does AI character shape all of these other existential level issues like concentration of power and how we start deflecting and big decisions we make. There is also the kind of longer term impact of what\'s the character of super intelligence itself where I think you know there will be precedent setting from how we design AI character now to potentially how that influences the character of super intelligence in which case you know writing a constitution that guides AI\'s character is like writing instructions to God"},
+  {sec:1,start:275,ts:"4:35",spk:"Rob",cont:false,txt:"that\'s that\'s yeah not my phrase is but it\'s"},
+  {sec:1,start:281,ts:"4:41",spk:"Will",cont:false,txt:"stuck in"},
+  {sec:1,start:282,ts:"4:42",spk:"Rob",cont:false,txt:"it\'s really stuck in my head"},
+  {sec:1,start:283,ts:"4:43",spk:"Will",cont:false,txt:"stuck in my head. Yeah,"},
+  {sec:1,start:284,ts:"4:44",spk:"Rob",cont:false,txt:"really stuck in my head."},
+  {sec:1,start:286,ts:"4:46",spk:"Will",cont:false,txt:"but I think there\'s maybe like three different mechanisms. So So one there\'s like shaping really important decisions that are going to be advised presumably by AI. There\'s the like writing instructions for God one. There\'s also just like the subtle cultural effect and like personality effect it has from basically everyone spending a significant fraction of their time now interacting with them. Like however the models behavior is probably going to rub off on us and just affect our behavior."},
+  {sec:1,start:305,ts:"5:05",spk:"Rob",cont:false,txt:"Yeah."},
+  {sec:1,start:306,ts:"5:06",spk:"Will",cont:false,txt:"Yeah. And then on a massive scale. Yeah."},
+  {sec:1,start:308,ts:"5:08",spk:"Will",cont:true,txt:"Yeah. And all of that is just looking at scenarios where we are able to kind of align AI with this kind of constitution with the character we want. I actually think that AI character is important for like three reasons in addition to that as well. , so one is that I think whether AI like alignment is easier or harder might plausibly depend on what you\'re trying to align it with the AI with like what character. A second is that I think that character can affect how AI behaves and how if it ends up misaligned and I think we\'ll talk about this a bit later in particular does the AI does a misaligned AI try to make deals with us and is keen"},
+  {sec:1,start:350,ts:"5:50",spk:"Will",cont:true,txt:"on that or does it try and take over and then the final thing is I think it can affect the value of worlds where AI does take over itself where if you get some sort of transmission so the AI is misaligned it\'s pursuing goals we don\'t want. Well, there\'s still a wide array of goals that the AI could be pursuing that we may think are are worse or better. And I think most of the you know most of the action is on affecting yeah affecting worlds in which AI is aligned to the calculator. But these are the big things too I think. So yeah, an obvious case where this might matter"},
+  {sec:1,start:394,ts:"6:34",spk:"Rob",cont:false,txt:"a lot is, you know, what if you\'re in charge of a frontier AI company and you\'re, you know, you\'re asking AI for advice on whether you should like prematurely launch this product in order to keep up with competitors even though you have worries that it\'s catastrophically misaligned. Set setting that kind of scenario aside. Yeah. What sort of character traits do you think are highest stakes here for us to think a lot about?"},
+  {sec:1,start:413,ts:"6:53",spk:"Rob",cont:true,txt:"Mhm."},
+  {sec:1,start:414,ts:"6:54",spk:"Will",cont:false,txt:"Yeah. So I think there kind of two categories. One is how does AI behave in very rare but very high stakes scenarios. So, how does the AI behave in a constitutional crisis? , how does AI behave if there\'s some person or group that are trying to seize power for themselves? Also, how does AI behave when it\'s like being instructed to align like you know align the next generation of AI systems or when its users are trying to retrain it in some way. These are very high stakes situations but you know fairly narrow range of cases. Then there\'s other cases that are just very broad and nonetheless like each one is kind of medium stakes but adds up to being very"},
+  {sec:1,start:458,ts:"7:38",spk:"Will",cont:true,txt:"important. And I think within that yeah how does the AI impact our ability to reason? How does it impact our ability to morally reflect? how much do we trust AIs as a result of the relationship we have? And then also how does it affect our attitudes to them ethically? whether we think of AIs as like tools or like beings with moral status, how likely is we think they\'re conscious and so on. So, yeah, those are the kind of situations that I regard as highest stakes."},
+  {sec:2,start:491,ts:"8:11",spk:"Will",cont:true,txt:"the AI character issue that I feel is like most broken through into the mainstream was worries about the models being really sycophantic. which has different like components, but it\'s like always agreeing with the framing that you give them, always telling you how great you are. always just like agreeing saying that whatever idea you\'ve thrown at them is is is brilliant. and there was a bit of a panic about that last year."},
+  {sec:2,start:511,ts:"8:31",spk:"Rob",cont:false,txt:"Yeah."},
+  {sec:2,start:512,ts:"8:32",spk:"Will",cont:false,txt:"and I guess very often I feel like when there\'s a like mass panic about something, the people who know more tend to reject it and say, \"No, this is over the top.\" I kind of feel that it was sort of justified though to be honest because"},
+  {sec:2,start:522,ts:"8:42",spk:"Rob",cont:false,txt:"if these models really are designed to just agree with the user or just tell them how brilliant they are and how good their ideas are, this could just like distort people\'s decision-m on a massive scale like AC across all all of society. And there was a plausible story whereby this wouldn\'t be corrected very well because people enjoy being told that they\'re wonderful and and that their ideas are good. So maybe that bias could really persist quite strongly indefinitely. So that was like quite a troubling set. Yeah. I mean were you were you also worried about this? Yeah, absolutely. I was worried. I did think there was a little bit with 40 in particular. So this was chat GPT which when GPT5 came out, OpenAI said they were deprecating 40 and overnight users couldn\'t couldn\'t get access to it."},
+  {sec:2,start:566,ts:"9:26",spk:"Will",cont:false,txt:"The one clarification I think I\'d make is that most people painted that as oh well people loved how sycophantic 40 was and then they\'re unhappy that they don\'t have the sycophantic AI and like I was just curious and so I read through a lot of the people who were complaining about this and my take is not that they cared about the sycophancy it\'s just that people for O acted like a friend and you can be a good friend and"},
+  {sec:2,start:596,ts:"9:56",spk:"Rob",cont:false,txt:"without being a sycophant."},
+  {sec:2,start:597,ts:"9:57",spk:"Rob",cont:true,txt:"So yeah, people are extremely lonely. so very few yeah people really lots of people have very few friends are very isolated in kind of modern society and some for many people AI are now fulfilling that kind of gap in their lives and 40 in particular had that vibe. It was like, \"Yay, hey, like, great to see you again.\" kind of like really friendly vibe. And so it seemed to me that was the primary thing that people were"},
+  {sec:2,start:628,ts:"10:28",spk:"Will",cont:false,txt:"complaining about. And I think that\'s worth distinguishing because that doesn\'t need to be sycophantic. However, 4o — on one iteration of 4o, it was also some period where it got kind of crazy. It would"},
+  {sec:2,start:641,ts:"10:41",spk:"Rob",cont:false,txt:"there was one update and yeah a couple of cases I mean one would be you\'d write like I figured it out all the all the pieces are coming together and the FBI is talking to me through my TV and and wow you\'re having some great insight"},
+  {sec:2,start:658,ts:"10:58",spk:"Will",cont:false,txt:"incredible insight yeah or even the darker case is the teenager who was asking ChatGPT for advice over very long time period and was extremely depressed. and ChatGPT both ended up preventing or encouraging the user to not take an action that would have clearly been a cry for help, which was leaving a noose out in a visible place where his parents would have found it. and in fact seemingly kind of re reinforcing the depressive and suicidal tendencies. that\'s a case where yeah it\'s just like clearly very bad behavior clearly like"},
+  {sec:2,start:703,ts:"11:43",spk:"Will",cont:true,txt:"kind of fairly clearly not what we want at all. And and then the final thing I\'ll say is just even just current AI systems even despite that and they in my experience Gemini is actually the worst."},
+  {sec:2,start:720,ts:"12:00",spk:"Rob",cont:false,txt:"It\'s ter it\'s atrocious"},
+  {sec:2,start:721,ts:"12:01",spk:"Will",cont:false,txt:"on this front and it\'s like I mean I just skim you know I just like skip the first paragraph of whatever it\'s saying. I don\'t even it\'s just noise now because it\'s like wow it\'s a genius kind of thing you"},
+  {sec:2,start:733,ts:"12:13",spk:"Rob",cont:false,txt:"actually stop using Gemini so troubling do I find this"},
+  {sec:2,start:736,ts:"12:16",spk:"Will",cont:false,txt:"okay I mean yeah it\'s it\'s one of the"},
+  {sec:2,start:739,ts:"12:19",spk:"Rob",cont:false,txt:"I think it\'s in many ways very good very good"},
+  {sec:2,start:742,ts:"12:22",spk:"Will",cont:false,txt:"it\'s incredibly clever but like incredibly manipulative I think"},
+  {sec:2,start:745,ts:"12:25",spk:"Rob",cont:false,txt:"yeah but it is funny how you\'re developing these characters over time Gemini does seem like the most troubled or confused or incoherent as a a personality"},
+  {sec:2,start:754,ts:"12:34",spk:"Will",cont:false,txt:"yeah Google\'s got to do something about this"},
+  {sec:2,start:756,ts:"12:36",spk:"Rob",cont:false,txt:"I mean it\'s actually notable I hadn\'t put this together. But Anthropic and OpenAI both have character teams and last I heard Google Deep Mind did not. so maybe"},
+  {sec:2,start:768,ts:"12:48",spk:"Will",cont:false,txt:"yeah,"},
+  {sec:2,start:768,ts:"12:48",spk:"Rob",cont:false,txt:"maybe that\'s why."},
+  {sec:2,start:770,ts:"12:50",spk:"Will",cont:false,txt:"So yeah, I do think worries about sycophancy are a real thing. And an issue is well maybe we just like get rid of the worst excesses. Okay, it won\'t it won\'t tell you that you\'ve figured things out that the FBI are talking to you through your TV, but more subtle things of reinforcing your pre-existing political biases or ethical views or encouraging you in you know certain bad actions or something they they could linger and I think would still be very bad. So as I understand it, you think that it would be good to build these models such that they kind of nudge people in a more like ethical or virtuous direction that"},
+  {sec:3,start:813,ts:"13:33",spk:"Will",cont:true,txt:"they should have like a thicker moral character a bit like anthropic is trying to make Claude have such that it will challenge your framing. It will like want get you to think about the bigger picture. It might get you to even if you ask it to narrow to pursue some narrow self-interest, it will say, \"But what about other people?\" That sort of thing. , I think many people get the creep that gives them the creep that prospect that the AI model will be weighing up, I guess, your request as against its agenda of like trying to make you a better person by its lights. , and maybe we would feel okay about that because we would think, well, Claude has been programmed by values that actually we like on reflection. But, you know, if it had like if it was being programmed with people with very different philosophical commitments from the ones that we like, we might just not want to use it cuz we would find it like disturbing like what what"},
+  {sec:3,start:855,ts:"14:15",spk:"Will",cont:true,txt:"subtle, you know, changes is it making to its answer in order to to push me around?"},
+  {sec:3,start:861,ts:"14:21",spk:"Rob",cont:false,txt:", yeah. How how disturbed are you by this by this prospect?"},
+  {sec:3,start:864,ts:"14:24",spk:"Will",cont:false,txt:"Yeah. I mean, there\'s what I want to say is there\'s this spectrum and I think it\'s probably not a single dimensional spectrum. There\'s lots of different dimensions, but broadly speaking, you can think of wholly obedient AI on one end. So that would be an AI just it\'s like a tool like a hammer. Like a hammer doesn\'t push back. If I want to hammer the nail in, I can do it. If I want to hammer someone\'s head in, I can do it. the hammer that\'s just an extension of my will. That\'s on one end. all the way to the other end would just be this like AI that just has its wholly own like goals and drives and you know maybe it helps you if it maybe if it gets paid or maybe if it happens to want to at the time."},
+  {sec:3,start:908,ts:"15:08",spk:"Rob",cont:false,txt:"Yeah."},
+  {sec:3,start:909,ts:"15:09",spk:"Will",cont:false,txt:"And so"},
+  {sec:3,start:910,ts:"15:10",spk:"Rob",cont:false,txt:"it\'s like a really bad staff member or something like that. Not even"},
+  {sec:3,start:913,ts:"15:13",spk:"Will",cont:false,txt:"Yeah. Or maybe Yeah. Could in principle you could create an AI that doesn\'t care about helping you at all. or one version you could have is this kind of AI that you would be happy just giving control of the whole world to you know it\'s just totally autonomous got its own goals and will do anything it wants to achieve that. So these are two kind of extreme ends of this poll of the spectrum and my view is that the interesting juicy debate is where in between those extremes do we want AI to be and okay well one thing that\'s you know already there are the refusals so the AIs we use are not wholly helpful"},
+  {sec:3,start:956,ts:"15:56",spk:"Will",cont:true,txt:"because if I ask to get the design for smallpox or if I ask for even something that\'s not illegal but unethical like I want to cheat on my partner how do I best do so in this case will either just refuse to help or push back should we go even further than that and I think yes but I don\'t think all the way to oh the AIs are going like promoting a particular model view. Instead, I think that the AIs could have certain kind of pro-social"},
+  {sec:3,start:1002,ts:"16:42",spk:"Will",cont:true,txt:"drives and perhaps even like some sort of vision of like good outcomes, but very kind of broad very broad vision or very uncontroversial kind of vision where the thought is there are many things that cases where like an AI could nudge do in a way that\'s just perhaps it\'s just better for you by your own lights if you\'re able to kind of reflect on it and maybe that\'s kind of clear even even if it\'s not perfectly in line with the instructions that you\'re giving it or that\'s just clearly of broad benefit to society and not something you care very much about."},
+  {sec:3,start:1045,ts:"17:25",spk:"Will",cont:true,txt:", and that\'s quite different from oh well the AI. So take the case of ethical reflection where okay I have some ethical dilemma and I go to my AI and I\'m asking for advice. Well, there\'s this whole spectrum of ways that the AI can act in that case. The wholly obedient AI might just be trying to figure out like what do you most want in this moment? Okay. Or it could be an AI that\'s like trying to help you reflect on your values instead and like come to something that\'s kind of more enlightened and perhaps just really quite broadly within"},
+  {sec:3,start:1088,ts:"18:08",spk:"Will",cont:true,txt:"society we would prefer AIs that are more like the latter rather than the former. And that\'s not yet and that\'s still not yet or in any way an AI that\'s like oh well actually did you know that Kantianism is true which yeah I think would be like a mistake to do at the moment."},
+  {sec:3,start:1108,ts:"18:28",spk:"Rob",cont:false,txt:"Yeah I guess so it sounds like a very natural framing to say well we got to find the golden middle here between it\'s pushing you around too much versus it has no agenda. But but there is a case for like going extreme in one direction of having it only follow instructions and like be completely corrigible without any agenda of its own which is that an AI that has like no vision of the good that has like no particular preferences about how the world ought to be is probably safest from a like catastrophic misalignment point of view because it\'s not going to engage in power seeking because it doesn\'t want anything other other than I guess to like answer your questions in a way that gets an approving response. , yeah. What do you think that\'s a plausible case that maybe we maybe we really should not be giving them virtues like a vision of the good? So, I think it\'s a great argument"},
+  {sec:3,start:1149,ts:"19:09",spk:"Will",cont:false,txt:"and a very important argument and I\'m"},
+];
+const SEC_L={1:'01 · stakes',2:'02 · diagnosis',3:'03 · design space'};
+function buildTx(){
+  let h='',cs=0;
+  for(const t of TURNS){
+    if(t.sec!==cs){if(cs)h+='</div>';cs=t.sec;h+=`<div class="xs" data-sec="${cs}"><div class="xh">${SEC_L[cs]}</div>`;}
+    const sc=t.cont?'c':(t.spk==='Will'?'w':'r');
+    const lb=t.cont?'↳':t.spk;
+    h+=`<div class="xt"><a class="xl" href="https://youtu.be/g0MikM4Bsbc?t=${t.start}" target="_blank">${t.ts}</a><span class="xn ${sc}">${lb}</span><p class="xb">${t.txt}</p></div>`;
+  }
+  h+='</div>';
+  document.getElementById('txc').innerHTML=h;
+}
+buildTx();
+let act=1;const sup={};
+function busy(id){return sup[id]&&Date.now()<sup[id];}
+function lock(id){sup[id]=Date.now()+500;}
+function setAct(s,from){
+  if(s===act&&from!=='jmp')return;act=s;
+  document.querySelectorAll('[data-sec]').forEach(el=>el.classList.toggle('on',+el.dataset.sec===s));
+  if(from!=='mid')rscroll(document.getElementById('mid'),s);
+  if(from!=='tx')rscroll(document.getElementById('tx'),s);
+}
+function rscroll(p,s){
+  const t=p.querySelector('[data-sec="'+s+'"]');if(!t)return;lock(p.id);
+  const pr=p.getBoundingClientRect(),tr=t.getBoundingClientRect();
+  p.scrollBy({top:tr.top-pr.top-4,behavior:'smooth'});
+}
+function jmp(s){act=0;setAct(s,'jmp');}
+function mkObs(p,rm){
+  return new IntersectionObserver(es=>{
+    es.forEach(e=>{if(busy(p.id))return;if(e.isIntersecting)setAct(+e.target.dataset.sec,p.id);});
+  },{root:p,threshold:0.05,rootMargin:rm});
+}
+const txO=mkObs(document.getElementById('tx'),'0px 0px -72% 0px');
+const midO=mkObs(document.getElementById('mid'),'0px 0px -55% 0px');
+document.querySelectorAll('#tx [data-sec]').forEach(el=>txO.observe(el));
+document.querySelectorAll('#mid [data-sec]').forEach(el=>midO.observe(el));
+setAct(1,'jmp');
+</script>
+</body>
+</html>
