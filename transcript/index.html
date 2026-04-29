@@ -6,6 +6,7 @@
 <title>AI character and the epistemic stakes — Will MacAskill · 80,000 Hours</title>
 <meta name="description" content="Three-section synchronized transcript: Will MacAskill and Rob Wiblin on AI character, sycophancy, and the ethics spectrum. 80,000 Hours podcast 2025.">
 <link rel="canonical" href="https://tools.joshuashew.com/transcript/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2032%2032%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%225%22%20fill%3D%22%230e0c0a%22/%3E%3Crect%20x%3D%226%22%20y%3D%229%22%20width%3D%2220%22%20height%3D%222.5%22%20rx%3D%221.25%22%20fill%3D%22%23e2d9cd%22/%3E%3Crect%20x%3D%226%22%20y%3D%2214.75%22%20width%3D%2220%22%20height%3D%222.5%22%20rx%3D%221.25%22%20fill%3D%22%23e2d9cd%22/%3E%3Crect%20x%3D%226%22%20y%3D%2220.5%22%20width%3D%2213%22%20height%3D%222.5%22%20rx%3D%221.25%22%20fill%3D%22%231D9E75%22/%3E%3C/svg%3E">
 <!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://tools.joshuashew.com/transcript/">
@@ -14,7 +15,7 @@
 <meta property="og:image" content="https://tools.joshuashew.com/social-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Quote card: AI character and the epistemic stakes — Will MacAskill · 80,000 Hours">
+<meta property="og:image:alt" content="AI character and the epistemic stakes — Will MacAskill · 80,000 Hours — quote card">
 <meta property="og:site_name" content="tools.joshuashew.com">
 <!-- Twitter / Bluesky card -->
 <meta name="twitter:card" content="summary_large_image">
@@ -72,7 +73,9 @@ body{background:var(--bg);color:var(--fg);font-family:var(--sans);min-height:100
 .xn{font-size:11px;font-family:var(--mono);font-weight:500;padding-top:1px}
 .xn.w{color:#1D9E75}.xn.r{color:#BA7517}.xn.c{color:var(--fg3)}
 .xb{font-family:var(--serif);font-size:13px;line-height:1.7;color:var(--fg)}
-.foot{font-size:11px;font-family:var(--mono);color:var(--fg3);margin-top:10px}
+.foot{font-size:11px;font-family:var(--mono);color:var(--fg3);margin-top:10px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot a{color:var(--fg3);text-decoration:none}
+.foot a:hover{color:var(--fgi)}
 </style>
 </head>
 <body>
@@ -83,7 +86,7 @@ body{background:var(--bg);color:var(--fg);font-family:var(--sans);min-height:100
     AI character and the epistemic stakes
     <a href="https://youtu.be/g0MikM4Bsbc?t=58" target="_blank">watch on youtube ↗</a>
   </div>
-  <div class="hdr-sub">click timestamps to jump to video &nbsp;·&nbsp; <span style="color:#1D9E75;font-family:var(--mono);font-size:11px">Will</span> &nbsp;·&nbsp; <span style="color:#BA7517;font-family:var(--mono);font-size:11px">Rob</span> &nbsp;·&nbsp; ↳ continuation &nbsp;·&nbsp; speaker labels LLM-attributed from auto-captions</div>
+  <div class="hdr-sub">click timestamps to jump to video &nbsp;·&nbsp; <span style="color:#1D9E75;font-family:var(--mono);font-size:11px">Will</span> &nbsp;·&nbsp; <span style="color:#BA7517;font-family:var(--mono);font-size:11px">Rob</span> &nbsp;·&nbsp; ↳ continuation &nbsp;·&nbsp; speaker labels LLM-attributed</div>
 </div>
 <div class="wrap">
 <div id="toc" class="pnl">
@@ -99,7 +102,10 @@ body{background:var(--bg);color:var(--fg);font-family:var(--sans);min-height:100
 </div>
 <div id="tx" class="pnl"><div id="txc"></div></div>
 </div>
-<div class="foot">youtube auto-captions · obvious errors corrected · timestamps ±0.5s · speaker labels LLM-attributed</div>
+<div class="foot">
+  <span>youtube auto-captions · obvious errors corrected · timestamps ±0.5s</span>
+  <span>built &amp; deployed by <a href="https://claude.ai" target="_blank">Claude Sonnet 4.6</a> · claude.ai · April 2026</span>
+</div>
 </div>
 <script>
 const TURNS = [
